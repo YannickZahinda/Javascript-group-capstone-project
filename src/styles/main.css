@@ -1,3 +1,13 @@
 body {
     background-color: aquamarine;
 }
+
+footer {
+  width: calc(100% - 24px);
+  padding: 30px 10px;
+  margin: 0 auto;
+  background-color:blue;
+  color:#fff;
+  text-align: center;
+  font-weight: bolder;
+}
