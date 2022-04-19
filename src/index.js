@@ -1,4 +1,4 @@
-import test from './testWepack.js';
 import './styles/main.css';
+import commentPopup from './comments/commentPopup.js';
 
-test();
+commentPopup();
