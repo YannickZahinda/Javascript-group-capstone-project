@@ -1,4 +1,4 @@
-import test from "./testWepack.js";
-import './styles/main.css'
+import test from './testWepack.js';
+import './styles/main.css';
 
-console.log(test());
+test();
