@@ -1,4 +1,9 @@
-import test from "./testWepack.js";
-import './styles/main.css'
+import './styles/main.css';
+import commentPopup from './comments/commentPopup.js';
 
-console.log(test());
+const commentBtn = document.getElementById('comment-pop');
+
+commentBtn.addEventListener('click', () => {
+  document.querySelector('.container').style.display = 'none';
+  commentPopup();
+});
