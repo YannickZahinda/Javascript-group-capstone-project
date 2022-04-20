@@ -1,5 +1,5 @@
 function test() {
-    return 'hello webpack';
+  return 'hello webpack';
 }
 
 export default test;
