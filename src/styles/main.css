@@ -15,6 +15,9 @@ header {
 
 header > a {
   margin-top: 40px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 nav > ul {

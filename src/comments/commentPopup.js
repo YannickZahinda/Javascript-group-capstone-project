@@ -6,17 +6,17 @@ const commentPopup = () => {
   addComment.innerHTML = `
    <div class="comment-wrapper">
    <button class="close-comment">&times;</button>
-    <h1>Comment Section </h1>
+    <h1>Movies heer</h1>
     <img src=${Img} alt="spaceship" width="350px" height="200px">
-    <h2 class="comment-text">Space 3</h2>
+    <h4 class="comment-text">url:https://www.tvmaze.com/episodes/8/under-the-dome-1x08-thicker-than-water</h4>
     <div class="comment-rows">
     <div class="row"> 
-    <h4>Fuel: <span>titanium</span></h4>
-    <h4>Weigh: <span>400</span></h4>
+    <h4>Airdate: <span>12.10.2008</span></h4>
+    <h4>Type: <span>400</span></h4>
     </div>
     <div class="row">
-        <h4>Length: <span>100,000</span></h4>
-        <h4>Power: <span>100,000,000 </span></h4>
+        <h4>Rating: <span>7.7</span></h4>
+        <h4>Season: <span>6 </span></h4>
     </div>
     </div>
     <h3 class="comment-text">Comments (2) </h3>
