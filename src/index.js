@@ -1,7 +1,10 @@
 import './styles/main.css';
+import itemDisplayer from '../Homepage/home.js';
 import commentPopup from './comments/commentPopup.js';
 
 const commentBtn = document.getElementById('comment-pop');
+
+itemDisplayer();
 
 commentBtn.addEventListener('click', () => {
   document.querySelector('.container').style.display = 'none';

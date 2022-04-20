@@ -3,6 +3,8 @@ import Img from '../asset/spaceship.jpeg';
 const addComment = document.querySelector('#comment-section');
 
 const commentPopup = () => {
+  addComment.style.display = '';
+  addComment.classList.add('show');
   addComment.innerHTML = `
    <div class="comment-wrapper">
    <button class="close-comment">&times;</button>
