@@ -1,4 +1,4 @@
-import { itemsCounter } from './itemsCounter';
+import { itemsCounter } from './itemsCounter.js';
 
 test('items counter check ', () => {
   const arr = [

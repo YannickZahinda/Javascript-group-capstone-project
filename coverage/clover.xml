@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1650551246088" clover="3.2.0">
+  <project timestamp="1650551246089" name="All files">
+    <metrics statements="24" coveredstatements="9" conditionals="10" coveredconditionals="4" methods="11" coveredmethods="2" elements="45" coveredelements="15" complexity="0" loc="24" ncloc="24" packages="1" files="2" classes="2"/>
+    <file name="commentCounter.js" path="/home/kantush/Desktop/Dev/Microverse/Module_2/Javascript-group-capstone-project/src/js/commentCounter.js">
+      <metrics statements="19" coveredstatements="7" conditionals="8" coveredconditionals="2" methods="9" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+    </file>
+    <file name="itemsCounter.js" path="/home/kantush/Desktop/Dev/Microverse/Module_2/Javascript-group-capstone-project/src/js/itemsCounter.js">
+      <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <line num="1" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

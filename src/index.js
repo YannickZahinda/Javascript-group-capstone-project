@@ -1,9 +1,9 @@
 import './css/style.css';
 import './css/comment.css';
-import getData, { addLikes, likeCount } from './js/api';
-import createCardItem from './js/createCardItem';
-import displayTvShownumbers from './js/itemsCounter';
-import enableComments from './js/CommentPopup';
+import getData, { addLikes, likeCount } from './js/api.js';
+import createCardItem from './js/createCardItem.js';
+import displayTvShownumbers from './js/itemsCounter.js';
+import enableComments from './js/CommentPopup.js';
 
 document.addEventListener('click', async (e) => {
   if (e.target.matches('.heart')) {
@@ -32,16 +32,18 @@ const removeLoding = () => {
 const renderItems = async () => {
   loading();
   const itemsData = await getData();
-  displayTvShownumbers(itemsData);
+  const showCount = 12;
+  const showLess = itemsData.slice(0, showCount);
+  displayTvShownumbers(showLess);
   removeLoding();
   const likes = await likeCount();
-  for (let i = 0; i < itemsData.length; i += 1) {
+  for (let i = 0; i < showLess.length; i += 1) {
     let numLikes = 0;
-    numLikes = likes.filter((like) => like.item_id === itemsData[i].id);
+    numLikes = likes.filter((like) => like.item_id === showLess[i].id);
     if (numLikes.length > 0) {
-      createCardItem(itemsData[i], numLikes[0].likes);
+      createCardItem(showLess[i], numLikes[0].likes);
     } else {
-      createCardItem(itemsData[i], 0);
+      createCardItem(showLess[i], 0);
     }
   }
 };

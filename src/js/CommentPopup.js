@@ -1,4 +1,4 @@
-import updateTotalCommentsCount, { fetchMovieComments } from './commentCounter';
+import updateTotalCommentsCount, { fetchMovieComments } from './commentCounter.js';
 
 const url1 = 'https://api.tvmaze.com/shows';
 const commentsEndpoint = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/DWcDAh13W8mhMfudWgwK/comments';
@@ -54,7 +54,7 @@ const showComments = (movieId) => {
   });
 };
 const displayMoviePopup = (movieId) => {
-  popup.innerHTML = `Fetching data...<br>
+  popup.innerHTML = `Loading...<br>
   <span id="close-popup">X</span>`;
 
   fetchMovieData(movieId).then((data) => {

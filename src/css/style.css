@@ -16,6 +16,10 @@ body {
   background-color: #fff;
 }
 
+header {
+  background-color: aqua;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -168,4 +172,17 @@ footer {
   height: 100vh;
   position: absolute;
   z-index: 99999999;
+}
+
+.load-more {
+  padding: 8px;
+  background-color: aquamarine;
+  margin: 5px auto;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }
