@@ -1,8 +1,8 @@
-import Img from '../asset/spaceship.jpeg';
+import Img from '../../assets/spaceship.jpeg';
 
 const addComment = document.querySelector('#comment-section');
 
-const commentPopup = () => {
+const commentPopup =  () => {
   addComment.innerHTML = `
    <div class="comment-wrapper">
    <button class="close-comment">&times;</button>

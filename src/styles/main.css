@@ -163,3 +163,86 @@ nav > ul li:first-child {
   height: 100%;
   margin: 0 auto;
 }
+
+#reserve-container{
+  border: 2px solid #000;
+  border-radius: 9px;
+  padding: 6px;
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+
+.image-reservation .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-img{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.cross-container{
+  text-align: right;
+}
+
+.image-reservation button {
+  border: none;
+  background: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section-one {
+  text-align: center;
+}
+
+.my-list{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.section-two{
+  text-align: center;
+}
+
+.section-three h1{
+  text-align: center;
+}
+
+.dates-list{
+  list-style-type: none;
+  text-align: center;
+}
+
+#my-form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+#my-form input {
+  width: 40%;
+  margin: 6px auto;
+  padding: 6px;
+}
+
+#my-form input[type = button]{
+  width: 20%;
+  margin: 10px auto;
+  padding: 8px;
+  background-color: rgb(99, 98, 98);
+  border-radius: 3px;
+  border: none;
+}
+
+.active{
+  display: flex;
+}

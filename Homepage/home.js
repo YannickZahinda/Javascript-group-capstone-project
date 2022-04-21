@@ -1,57 +1,28 @@
-import img from '../assets/film-icon.jpeg';
+import getApi from "../src/Reservation/reservation.js";
 
-const itemsContainer = document.querySelector('.cards-container');
-
-const objData = [
-  {
-    imgFilm: '',
-    titleFilm: 'film one',
-    likeIcon: '<i class="fas fa-heart heart "></i>',
-  },
-  {
-    imgFilm: '',
-    titleFilm: 'film two',
-    likeIcon: '<i class="fas fa-heart heart "></i>',
-  },
-  {
-    imgFilm: '',
-    titleFilm: 'film three',
-    likeIcon: '<i class="fas fa-heart heart "></i>',
-  },
-  {
-    imgFilm: '',
-    titleFilm: 'film four',
-    likeIcon: '<i class="fas fa-heart heart "></i>',
-  },
-  {
-    imgFilm: '',
-    titleFilm: 'film five',
-    likeIcon: '<i class="fas fa-heart heart "></i>',
-  },
-  {
-    imgFilm: '',
-    titleFilm: 'film six',
-    likeIcon: '<i class="fas fa-heart heart "></i>',
-  },
-];
-
-const itemDisplayer = () => {
-  for (let i = 0; i < objData.length; i += 1) {
+const itemsContainer = document.querySelector(".cards-container");
+const itemDisplayer = async (e) => {
+  const request = await fetch(`https://api.tvmaze.com/shows/1/episodes`);
+  const response = await request.json();
+  for (let i = 0; i < response.length; i += 1) {
     const item = `<div class="card">
     <figure>
-        <img src=${img} class="film" alt="film-img">
+        <img  class="film" alt="film-img">
         <div class='caption'>
-            <h4>${objData[i].titleFilm}</h4>
-            <p>${objData[i].likeIcon}</p>
+            <h4>${response[i].name}</h4>
+            <p><i class="fas fa-heart heart "></i></p>
         </div>
     </figure>
     <div class="comments-reservations">
-        <div class="comment"><input id = 'comments' type='text' placeholder = 'Comment' /></div>
-        <div class="reservation">Reservation</div>
-    </div>
+        <div class="comment"><button type='button' id='comments'>Comment</button></div>
+        <div class="reservation"><button type='button' id='reservation'> Reservation</button></div>
+    </div> 
   </div>`;
-    itemsContainer.innerHTML += item;
+      itemsContainer.innerHTML += item;
   }
+
 };
+
+
 
 export default itemDisplayer;

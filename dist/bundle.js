@@ -10,13 +10,24 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./Homepage/home.js":
+/*!**************************!*\
+  !*** ./Homepage/home.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _src_Reservation_reservation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/Reservation/reservation.js */ \"./src/Reservation/reservation.js\");\n\n\nconst itemsContainer = document.querySelector(\".cards-container\");\nconst itemDisplayer = async (e) => {\n  const request = await fetch(`https://api.tvmaze.com/shows/1/episodes`);\n  const response = await request.json();\n  for (let i = 0; i < response.length; i += 1) {\n    const item = `<div class=\"card\">\n    <figure>\n        <img  class=\"film\" alt=\"film-img\">\n        <div class='caption'>\n            <h4>${response[i].name}</h4>\n            <p><i class=\"fas fa-heart heart \"></i></p>\n        </div>\n    </figure>\n    <div class=\"comments-reservations\">\n        <div class=\"comment\"><button type='button' id='comments'>Comment</button></div>\n        <div class=\"reservation\"><button type='button' id='reservation'> Reservation</button></div>\n    </div> \n  </div>`;\n      itemsContainer.innerHTML += item;\n  }\n\n};\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (itemDisplayer);\n\n\n//# sourceURL=webpack://javascript-group-capstone-project/./Homepage/home.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/main.css":
 /*!*******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css ***!
   \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  padding: 0;\\n  margin: 0;\\n  box-sizing: border-box;\\n}\\n\\n.container {\\n  display: none;\\n}\\n\\nheader {\\n  display: flex;\\n  gap: 200px;\\n  justify-content: center;\\n  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\\n  font-size: 1.5rem;\\n  font-weight: 600;\\n}\\n\\nheader > a {\\n  margin-top: 40px;\\n}\\n\\nnav > ul {\\n  display: flex;\\n  margin-right: 100px;\\n  margin-top: 40px;\\n  gap: 60px;\\n  list-style: none;\\n}\\n\\nnav > ul li:first-child {\\n  text-decoration: underline;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/styles/main.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  padding: 0;\\n  margin: 0;\\n  box-sizing: border-box;\\n}\\n\\nheader {\\n  display: flex;\\n  gap: 200px;\\n  justify-content: center;\\n  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\\n  font-size: 1.5rem;\\n  font-weight: 600;\\n}\\n\\nheader > a {\\n  margin-top: 40px;\\n}\\n\\nnav > ul {\\n  display: flex;\\n  margin-right: 100px;\\n  margin-top: 40px;\\n  gap: 60px;\\n  list-style: none;\\n}\\n\\nnav > ul li:first-child {\\n  text-decoration: underline;\\n}\\n\\n#comment-section {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  border: 2px solid black;\\n  width: 60%;\\n  margin: 10px auto;\\n  padding-bottom: 2rem;\\n}\\n\\n.comment-wrapper {\\n  position: relative;\\n}\\n\\n.close-comment {\\n  background-color: #fff;\\n  border: none;\\n  font-size: 2.8rem;\\n  position: absolute;\\n  right: -45px;\\n  top: 30px;\\n  cursor: pointer;\\n  font-weight: 900;\\n}\\n\\n.input-comment > input {\\n  padding: 10px;\\n  margin-bottom: 10px;\\n  border: 3px solid black;\\n}\\n\\n.message-comment > textarea {\\n  padding: 20px;\\n  border: 3px solid black;\\n  box-shadow: 2px 3px black;\\n}\\n\\n.comment-button {\\n  padding: 5px 8px;\\n  margin-top: 20px;\\n  border: 2px solid black;\\n  box-shadow: 2px 3px black;\\n  font-size: 1.2rem;\\n  font-weight: 500;\\n  cursor: pointer;\\n}\\n\\n.comment-text {\\n  text-align: center;\\n}\\n\\n.comment-rows {\\n  display: flex;\\n  gap: 60px;\\n  background-color: rgb(243, 249, 247);\\n  font-family: \\\"Indie Flower\\\", cursive;\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-family: \\\"Open Sans\\\", sans-serif;\\n  font-family: \\\"Roboto\\\", sans-serif;\\n}\\n\\n.cards-container {\\n  display: grid;\\n  grid-template-columns: repeat(3, 1fr);\\n  grid-template-rows: repeat(2, 1fr);\\n  padding: 20px;\\n  gap: 20px;\\n}\\n\\n.card {\\n  width: 99%;\\n  background-color: rgb(108, 121, 132);\\n  border-radius: 8px;\\n  margin: auto;\\n}\\n\\n.card:hover {\\n  width: 100%;\\n  height: 100%;\\n  z-index: 1;\\n  margin: auto;\\n  transition: 0.6s;\\n}\\n\\n.caption {\\n  display: flex;\\n  justify-content: space-evenly;\\n}\\n\\n.comments-reservations {\\n  padding: 6px;\\n  text-align: center;\\n}\\n\\n.comments {\\n  border-radius: 4px;\\n  text-align: center;\\n}\\n\\n.reservation {\\n  background-color: rgb(215, 218, 219);\\n  padding: 10px;\\n  border-radius: 4px;\\n  width: 50%;\\n  margin: auto;\\n}\\n\\n.reservation:hover {\\n  cursor: progress;\\n}\\n\\n#comments {\\n  padding: 5px;\\n  border-radius: 4px;\\n  background-color: rgb(215, 218, 219);\\n  margin-bottom: 10px;\\n  border: none;\\n}\\n\\n.heart {\\n  color: rgb(249, 245, 245);\\n  font-size: 20px;\\n}\\n\\n.heart:hover {\\n  cursor: pointer;\\n  color: rgba(211, 37, 37, 0.739);\\n}\\n\\n.film {\\n  width: 100%;\\n  height: 100%;\\n  margin: 0 auto;\\n}\\n\\n#reserve-container{\\n  border: 2px solid #000;\\n  border-radius: 9px;\\n  padding: 6px;\\n  width: 80%;\\n  margin: auto;\\n}\\n\\n.section-one {\\n  text-align: center;\\n}\\n\\n.my-list{\\n  list-style-type: none;\\n  display: grid;\\n  grid-template-columns: repeat(2, 1fr);\\n  grid-template-rows: repeat(2, 1fr);\\n}\\n\\n.section-two{\\n  text-align: center;\\n}\\n\\n.section-three h1{\\n  text-align: center;\\n}\\n\\n.dates-list{\\n  list-style-type: none;\\n  text-align: center;\\n}\\n\\n#my-form{\\n  text-align: center;\\n  display: flex;\\n  flex-direction: column;\\n  width: 70%;\\n  margin: auto;\\n}\\n\\n#my-form input {\\n  width: 40%;\\n  margin: 6px auto;\\n  padding: 6px;\\n}\\n\\n#my-form input[type = button]{\\n  width: 20%;\\n  margin: 10px auto;\\n  padding: 8px;\\n  background-color: rgb(99, 98, 98);\\n  border-radius: 3px;\\n  border: none;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/styles/main.css?./node_modules/css-loader/dist/cjs.js");
+
 /***/ }),
 
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
@@ -109,33 +120,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/Reservation/reservation.js":
+/*!****************************************!*\
+  !*** ./src/Reservation/reservation.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nconst getApi = async () => {\n  const requestUrl = `https://api.tvmaze.com/shows/1/episodes`;\n  const request = new Request(requestUrl);\n  const response = await fetch(request);\n  const responseJson = await response.json();\n  // console.log(responseJson);\n\n  populateFilmImages(responseJson);\n  // populateReservations(responseJson);\n};\n\nfunction populateFilmImages(object) {\n  let myFilmImage = document.querySelectorAll(\".film\");\n  var imgArray = [];\n\n  object.forEach((data) => {\n      const imageSource = data.image.medium;\n      imgArray.push(imageSource);\n      \n  }) \n\n  myFilmImage.forEach((film, index) => {\n      film.src = imgArray[index];\n  })\n  \n\n}\n\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getApi);\n\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/Reservation/reservation.js?");
+
+/***/ }),
+
+/***/ "./src/comments/commentPopup.js":
+/*!**************************************!*\
+  !*** ./src/comments/commentPopup.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_spaceship_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/spaceship.jpeg */ \"./assets/spaceship.jpeg\");\n\n\nconst addComment = document.querySelector('#comment-section');\n\nconst commentPopup =  () => {\n  addComment.innerHTML = `\n   <div class=\"comment-wrapper\">\n   <button class=\"close-comment\">&times;</button>\n    <h1>Comment Section </h1>\n    <img src=${_assets_spaceship_jpeg__WEBPACK_IMPORTED_MODULE_0__} alt=\"spaceship\" width=\"350px\" height=\"200px\">\n    <h2 class=\"comment-text\">Space 3</h2>\n    <div class=\"comment-rows\">\n    <div class=\"row\"> \n    <h4>Fuel: <span>titanium</span></h4>\n    <h4>Weigh: <span>400</span></h4>\n    </div>\n    <div class=\"row\">\n        <h4>Length: <span>100,000</span></h4>\n        <h4>Power: <span>100,000,000 </span></h4>\n    </div>\n    </div>\n    <h3 class=\"comment-text\">Comments (2) </h3>\n    <p>03/11/2022 Alex: I'd love to buy it</p>\n    <p>03/12/2022 Mia: I love</p>\n    <h2 class=\"comment-text\">Add a comment </h2>\n    <form class=\"comment-form\">\n    <div class=\"input-comment\"><input type=\"text\" placeholder=\"Your name\" ></div>\n    <div class=\"message-comment\"><textarea> Your insights</textarea></div>\n    <button class=\"comment-button\">Comment</button>\n    </form>\n    </div>\n `;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentPopup);\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/comments/commentPopup.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _testWepack_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./testWepack.js */ \"./src/testWepack.js\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _asset_spaceship_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./asset/spaceship.jpeg */ \"./src/asset/spaceship.jpeg\");\n\n\n\n\n(0,_testWepack_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _Homepage_home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Homepage/home.js */ \"./Homepage/home.js\");\n/* harmony import */ var _src_Reservation_reservation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/Reservation/reservation.js */ \"./src/Reservation/reservation.js\");\n/* harmony import */ var _src_comments_commentPopup_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/comments/commentPopup.js */ \"./src/comments/commentPopup.js\");\n\n\n\n\n\nwindow.onload = () => {\n    const commentBtn = document.getElementById(\"comments\");\n    const reservationBtn = document.getElementById(\"reservation\");\n        commentBtn.addEventListener(\"click\", () => {\n          (0,_src_comments_commentPopup_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n        });\n      \n        reservationBtn.addEventListener(\"click\", () => {\n          reservationPop();\n        });\n}\n\n\n\n;(0,_Homepage_home_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_src_Reservation_reservation_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/testWepack.js":
-/*!***************************!*\
-  !*** ./src/testWepack.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction test() {\n  return 'hello webpack';\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (test);\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/testWepack.js?");
-
-/***/ }),
-
-/***/ "./src/asset/spaceship.jpeg":
-/*!**********************************!*\
-  !*** ./src/asset/spaceship.jpeg ***!
-  \**********************************/
+/***/ "./assets/spaceship.jpeg":
+/*!*******************************!*\
+  !*** ./assets/spaceship.jpeg ***!
+  \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"42b4dcd90d1b34216452.jpeg\";\n\n//# sourceURL=webpack://javascript-group-capstone-project/./src/asset/spaceship.jpeg?");
+eval("module.exports = __webpack_require__.p + \"42b4dcd90d1b34216452.jpeg\";\n\n//# sourceURL=webpack://javascript-group-capstone-project/./assets/spaceship.jpeg?");
 
 /***/ })
 

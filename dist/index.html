@@ -10,27 +10,57 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100;500&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d614fc8c85.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Webpack App</title>
-<script defer src="bundle.js"></script></head>
-<body>
-    <div class="comment-section">
-        <button>&times;</button>
-        <img src="./asset/spaceship.jpeg" alt="spaceship" />
-    </div>
-    <div class="container">
-        <header>
-            <a>Logo</a>
-            <nav>
-                <ul>
-                 <li>Spaceships(6)</li>
-                 <li>Planets</li>
-                 <li>Races</li>
-                </ul>
-            </nav>
-        </header>
   <script defer src="bundle.js"></script></head>
   <body>
     <div class="container">
+      <header>
+        <a>Logo</a>
+        <nav>
+          <ul>
+            <li>Spaceships(6)</li>
+            <li>Planets</li>
+            <li>Races</li>
+          </ul>
+        </nav>
+      </header>
+      <button id="comment-pop">comments</button>
+      <div id="comment-section"></div>
+      <div id="reserve-container">
+        <div class="image-reservation">
+          <button type="button">&times;</button>
+          <img src="../assets/spaceship.jpeg" alt="spaceship">
+        </div>
+        <div class="section-one">
+          <h2>Space 3</h2>
+          <ul class="my-list">
+            <li>Fuel spaceship</li>
+            <li>Fuel spaceship</li>
+            <li>Fuel spaceship</li>
+            <li>Fuel spaceship</li>
+          </ul>
+        </div>
+        <div class="section-two">
+          <h2>Reservation 2</h2>
+          <ul class="dates-list">
+            <li>03/05/2022</li>
+            <li>03/05/2022</li>
+          </ul>
+        </div>
+        <div class="section-three">
+          <h1>Add reservation</h1>
+          <form id="my-form">
+            <input type="text" placeholder="Your name" id="name-input">
+            <input type="date" placeholder="Start date" id="start-input">
+            <input type="date" placeholder="End date" id="end-input">
+            <input type="button" value="Submit Reservation">
+          </form>
+        </div>
+      </div>
       <div class="cards-container"></div>
     </div>
   </body>
