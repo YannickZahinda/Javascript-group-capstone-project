@@ -42,14 +42,21 @@ header {
   color: rgb(53, 53, 53);
 }
 
-footer {
+.footer {
   padding: 30px 10px;
   color: rgb(78, 75, 75);
   font-weight: bolder;
   font-family: monospace;
   margin-top: 20px;
-  background-color: rgb(215, 219, 219);
-  text-align: center;
+  text-align: left;
+  border-top: 1px solid rgb(55, 54, 54);
+  border-bottom: 1px solid rgb(55, 54, 54);
+}
+
+footer {
+  background-color: rgb(118, 117, 117);
+  height: 40px;
+  border-bottom: 1px solid rgb(55, 54, 54);
 }
 
 .grid-cards-container {
@@ -84,7 +91,8 @@ footer {
   color: #fff;
 }
 
-.comment-btn {
+.comment-btn,
+.reserve-btn {
   border: 2px solid black;
   padding: 0.4em;
   font-family: var(--main-font);
@@ -100,20 +108,11 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
-  /* outline: 1px solid black; */
 }
 
 .movie-title {
   text-align: center;
-
-  /* position: absolute;
-  right: 0;
-  left: 2px;
-  bottom: 90%; */
   width: 200px;
-
-  /* outline: 1px solid blue; */
 }
 
 .p-like {
@@ -123,7 +122,9 @@ footer {
 .heart {
   width: 100px;
   height: 100px;
-  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background:
+    url("https://cssanimation.rocks/images/posts/steps/heart.png")
+    no-repeat;
   background-position: 0 0;
   cursor: pointer;
   transition: background-position 1s steps(28);

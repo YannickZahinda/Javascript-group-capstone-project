@@ -125,8 +125,8 @@ const displayMoviePopup = (movieId) => {
   enableClosePopup();
 };
 const enableReservations = () => {
-  const commentBtns = document.querySelectorAll('.reserve-btn');
-  commentBtns.forEach((movie) => {
+  const reserveBtn = document.querySelectorAll('.reserve-btn');
+  reserveBtn.forEach((movie) => {
     movie.addEventListener('click', () => {
       const movieId = movie.getAttribute('movie_id');
       displayMoviePopup(movieId);

@@ -33,11 +33,15 @@ To run the above project you need to meet the following requirements:
 > To run the above project :
 > Run the following commands on your terminal of choice
 
-- git clone 
-- cd /dir
-- npm install
-- npm run start - to spin up local webpack server
-- npm run build - to build webpack
+```
+git clone : https://github.com/YannickZahinda/Javascript-group-capstone-project.git
+
+cd Javascript-group-capstone-project
+
+ npm install
+ npm run start - to spin up local webpack server
+ npm run build - to build webpack
+```
   
 
 
