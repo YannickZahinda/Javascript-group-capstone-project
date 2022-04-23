@@ -58,7 +58,10 @@ header {
 footer {
   width: calc(100% - 24px);
   padding: 30px 10px;
+  margin: 0 auto;
+  background-color: aquamarine;
   color: black;
+  text-align: center;
   font-weight: bolder;
 }
 
@@ -67,6 +70,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   margin-top: 6em;
   gap: 30px;
+  padding: 50px;
 }
 
 .item {
