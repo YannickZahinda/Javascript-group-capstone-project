@@ -17,47 +17,58 @@ body {
 }
 
 header {
-  background-color: rgb(215, 219, 219);
-  height: max-content;
+  background-color: aqua;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  padding: 20px;
-  font-size: 1.2rem;
+  align-items: center;
+  width: 75%;
+  margin: 0 4%;
+  padding: 1rem 0.5rem;
+}
+
+.links {
+  margin-left: 2rem;
 }
 
 .link-lists {
   display: flex;
-  gap: 40px;
-  margin-right: 80px;
   list-style: none;
+  margin-left: 280%;
 }
 
-.link-lists > li a {
-  list-style: none;
+.link-lists > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.link {
   text-decoration: none;
-  color: rgb(53, 53, 53);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0 3rem;
+  color: orangered;
+}
+
+.link:active,
+.link:hover {
+  border-bottom: 2px solid currentColor;
 }
 
 footer {
+  width: calc(100% - 24px);
   padding: 30px 10px;
-  color: rgb(78, 75, 75);
-  font-weight: bolder;
-  font-family: monospace;
-  margin-top: 20px;
-  background-color: rgb(215, 219, 219);
+  margin: 0 auto;
+  background-color: aquamarine;
+  color: black;
   text-align: center;
+  font-weight: bolder;
 }
 
 .grid-cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 6em;
-  gap: 30px;
-  padding: 50px;
 }
 
 .item {
@@ -89,7 +100,7 @@ footer {
   padding: 0.4em;
   font-family: var(--main-font);
   font-weight: bold;
-  color: rgb(5, 5, 5);
+  color: aquamarine;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
@@ -97,20 +108,9 @@ footer {
 
 .comment-and-like {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  /* outline: 1px solid black; */
-}
-
-.movie-title {
-  text-align: center;
-  /* position: absolute;
-  right: 0;
-  left: 2px;
-  bottom: 90%; */
-  width: 200px;
-  /* outline: 1px solid blue; */
+  gap: 0 1em;
 }
 
 .p-like {
@@ -125,8 +125,6 @@ footer {
   cursor: pointer;
   transition: background-position 1s steps(28);
   transition-duration: 0s;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .heart.is-active {
@@ -140,9 +138,6 @@ footer {
 
 .link-logo {
   text-decoration: none;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 20px;
 }
 
 .loading {
