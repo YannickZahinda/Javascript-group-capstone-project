@@ -69,7 +69,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 6em;
-  gap: 30px;
 }
 
 .item {
@@ -101,18 +100,7 @@ footer {
   padding: 0.4em;
   font-family: var(--main-font);
   font-weight: bold;
-  color: rgb(41, 42, 42);
-  cursor: pointer;
-  background-color: transparent;
-  border-radius: 8px;
-}
-
-.reserve-btn {
-  border: 2px solid black;
-  padding: 0.4em;
-  font-family: var(--main-font);
-  font-weight: bold;
-  color: rgb(41, 42, 42);
+  color: aquamarine;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
@@ -120,9 +108,9 @@ footer {
 
 .comment-and-like {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 0 1em;
 }
 
 .p-like {
@@ -137,8 +125,6 @@ footer {
   cursor: pointer;
   transition: background-position 1s steps(28);
   transition-duration: 0s;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .heart.is-active {
