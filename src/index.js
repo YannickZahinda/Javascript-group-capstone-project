@@ -4,7 +4,8 @@ import getData, { addLikes, likeCount } from './js/api.js';
 import createCardItem from './js/createCardItem.js';
 import displayTvShownumbers from './js/itemsCounter.js';
 import enableComments from './js/CommentPopup.js';
-import enableReservations from './js/reservationPopUp.js'
+import enableReserve from './js/reservePopup.js';
+import getMovieTitle from './js/getMovieTitle.js';
 
 document.addEventListener('click', async (e) => {
   if (e.target.matches('.heart')) {
@@ -51,5 +52,6 @@ const renderItems = async () => {
 
 renderItems().then(() => {
   enableComments();
-  enableReservations();
+  enableReserve();
+  getMovieTitle();
 });

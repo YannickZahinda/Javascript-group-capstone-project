@@ -17,52 +17,37 @@ body {
 }
 
 header {
-  background-color: aqua;
+  background-color: rgb(215, 219, 219);
+  height: max-content;
 }
 
 .navbar {
   display: flex;
-  align-items: center;
-  width: 75%;
-  margin: 0 4%;
-  padding: 1rem 0.5rem;
-}
-
-.links {
-  margin-left: 2rem;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  font-size: 1.2rem;
 }
 
 .link-lists {
   display: flex;
+  gap: 40px;
+  margin-right: 80px;
   list-style: none;
-  margin-left: 280%;
 }
 
-.link-lists > *:not(:last-child) {
-  margin-right: 2rem;
-}
-
-.link {
+.link-lists > li a {
+  list-style: none;
   text-decoration: none;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin: 0 3rem;
-  color: orangered;
-}
-
-.link:active,
-.link:hover {
-  border-bottom: 2px solid currentColor;
+  color: rgb(53, 53, 53);
 }
 
 footer {
-  width: calc(100% - 24px);
   padding: 30px 10px;
-  margin: 0 auto;
-  background-color: aquamarine;
   color: black;
-  text-align: center;
   font-weight: bolder;
+  margin-top: 20px;
+  background-color: rgb(215, 219, 219);
 }
 
 .grid-cards-container {
@@ -101,18 +86,7 @@ footer {
   padding: 0.4em;
   font-family: var(--main-font);
   font-weight: bold;
-  color: rgb(41, 42, 42);
-  cursor: pointer;
-  background-color: transparent;
-  border-radius: 8px;
-}
-
-.reserve-btn {
-  border: 2px solid black;
-  padding: 0.4em;
-  font-family: var(--main-font);
-  font-weight: bold;
-  color: rgb(41, 42, 42);
+  color: rgb(5, 5, 5);
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
@@ -123,6 +97,16 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  position: relative;
+}
+
+.movie-title {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 2px;
+  bottom: 90%;
+  width: 200px;
 }
 
 .p-like {
@@ -152,6 +136,9 @@ footer {
 
 .link-logo {
   text-decoration: none;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 .loading {
