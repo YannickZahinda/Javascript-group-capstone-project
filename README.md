@@ -31,15 +31,15 @@ To run the above project you need to meet the following requirements:
   
 
 
-# 🤵 Authors
+# 🤵 Author 1
 - Github: https://github.com/sainingo
 - https://twitter.com/saningoInn
-- linkedin.com/in/sainingo/
-
+- https://www.linkedin.com/in/saningo/
+#  🤵 Author 2
 - https://github.com/YannickZahinda/
 - https://www.linkedin.com/in/yannick-mulikuza-846452225/
 - https://twitter.com/ZahindaY
-
+#  🤵 Author 3
 - https://github.com/LYANGEND
 - https://www.linkedin.com/in/david-lyangenda-623087151/
   
