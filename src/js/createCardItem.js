@@ -9,14 +9,16 @@ const createCardItem = (item, itemLike = 0) => {
   const reserveBtn = document.createElement('button');
   const pLikesTag = document.createElement('p');
   const likeHeart = document.createElement('div');
+  const movieTitle = document.createElement('h4');
 
   cardContainer.append(cardElement);
   cardElement.append(cardImage, cardTitle, commentAndLikeDiv);
   cardElement.classList.add('item');
   cardTitle.classList.add('card-title');
+  movieTitle.classList.add('movie-title');
   likeHeart.classList.add('heart');
   likeHeart.id = item.id;
-  commentAndLikeDiv.append(likeHeart, pLikesTag, commentBtn, reserveBtn);
+  commentAndLikeDiv.append(movieTitle, likeHeart, pLikesTag, commentBtn, reserveBtn);
   pLikesTag.classList.add('p-like');
   commentAndLikeDiv.classList.add('comment-and-like');
   commentBtn.classList.add('comment-btn');
@@ -27,6 +29,7 @@ const createCardItem = (item, itemLike = 0) => {
   reserveBtn.id = item.id;
   commentBtn.textContent = 'Comment';
   reserveBtn.textContent = 'Reserve';
+  movieTitle.textContent = 'Movie Title';
 
   pLikesTag.textContent = `${itemLike} likes`;
   cardImage.src = item.image.medium;
