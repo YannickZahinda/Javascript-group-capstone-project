@@ -14,6 +14,8 @@
 
 ## Getting Started
 To run the above project you need to meet the following requirements:
+
+
 ## Prerequisites
 - Have [Vscode](https://code.visualstudio.com/) installed 
 - Have [Git](https://git-scm.com/) installed
@@ -22,6 +24,10 @@ To run the above project you need to meet the following requirements:
 ## Screenshot of our Project
 
 <img width="1280" alt="Screen Shot 2022-04-23 at 13 23 47" src="https://user-images.githubusercontent.com/91213045/164892432-9a161551-afe5-477f-8ac2-c3b74501388b.png">
+
+## Deployment
+
+[link to our project]()
 
 ## Run
 > To run the above project :
