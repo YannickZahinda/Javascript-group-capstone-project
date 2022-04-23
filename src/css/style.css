@@ -100,16 +100,19 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
   /* outline: 1px solid black; */
 }
 
 .movie-title {
   text-align: center;
+
   /* position: absolute;
   right: 0;
   left: 2px;
   bottom: 90%; */
   width: 200px;
+
   /* outline: 1px solid blue; */
 }
 

@@ -42,8 +42,7 @@ const enableClosePopup = () => {
 };
 
 const showComments = (movieId) => {
-    fetchMovieReserve(movieId).then((data) => {
-        console.log(data)
+  fetchMovieReserve(movieId).then((data) => {
     if (!data.error) {
       let comments = '';
       data.forEach((comment) => {
@@ -113,7 +112,7 @@ const displayMoviePopup = (movieId) => {
         item_id: movieId,
         username: user,
         startDateReservation: startDate,
-        endDateReservation: endDate
+        endDateReservation: endDate,
       }).then(() => {
         showComments(movieId);
         updateTotalCommentsCount(movieId);

@@ -27,7 +27,7 @@ To run the above project you need to meet the following requirements:
 
 ## Deployment
 
-[link to our project]()
+[link to our project](https://yannickzahinda.github.io/Javascript-group-capstone-project/)
 
 ## Run
 > To run the above project :

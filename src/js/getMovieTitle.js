@@ -7,10 +7,9 @@ const getMovieTitle = async () => {
   const data = await response.json();
   data.forEach((title) => {
     titleArray.push(title.name);
-    console.log(titleArray[0]);
-    movieTitle.forEach((movie, index)=>{
-      movie.innerHTML = titleArray[index]
-    })
+    movieTitle.forEach((movie, index) => {
+      movie.innerHTML = titleArray[index];
+    });
   });
 };
 export default getMovieTitle;
