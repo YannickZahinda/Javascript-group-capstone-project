@@ -19,6 +19,10 @@ To run the above project you need to meet the following requirements:
 - Have [Git](https://git-scm.com/) installed
 - Node installed
 
+## Screenshot of our Project
+
+<img width="1280" alt="Screen Shot 2022-04-23 at 13 23 47" src="https://user-images.githubusercontent.com/91213045/164892432-9a161551-afe5-477f-8ac2-c3b74501388b.png">
+
 ## Run
 > To run the above project :
 > Run the following commands on your terminal of choice

@@ -44,8 +44,9 @@ header {
 
 footer {
   padding: 30px 10px;
-  color: black;
+  color: rgb(78, 75, 75);
   font-weight: bolder;
+  font-family: monospace;
   margin-top: 20px;
   background-color: rgb(215, 219, 219);
 }
@@ -97,16 +98,17 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  position: relative;
+  /* outline: 1px solid black; */
 }
 
 .movie-title {
   text-align: center;
-  position: absolute;
+  /* position: absolute;
   right: 0;
   left: 2px;
-  bottom: 90%;
+  bottom: 90%; */
   width: 200px;
+  /* outline: 1px solid blue; */
 }
 
 .p-like {
