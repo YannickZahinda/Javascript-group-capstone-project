@@ -19,6 +19,7 @@ body {
 header {
   background-color: rgb(215, 219, 219);
   height: max-content;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -144,9 +145,10 @@ footer {
 
 .link-logo {
   text-decoration: none;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 20px;
+  color: rgb(52, 49, 49);
+  font-size: 23px;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .loading {
