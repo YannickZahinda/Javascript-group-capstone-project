@@ -23,7 +23,7 @@ To run the above project you need to meet the following requirements:
 
 ## Screenshot of our Project
 
-<img width="1280" alt="Screen Shot 2022-04-23 at 13 23 47" src="https://user-images.githubusercontent.com/91213045/164892432-9a161551-afe5-477f-8ac2-c3b74501388b.png">
+![screencapture-marvelous-cannoli-3b42e2-netlify-app-2022-05-16-12_02_55](https://user-images.githubusercontent.com/91213045/168569451-ebadf523-5531-4da6-8159-c11a64bdd34c.png)
 
 ## Deployment
 
